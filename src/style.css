@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  #celsius-unit,
+  #fahrenheit-unit {
+    font-size: 10px;
+  }
+  #fahrenheit-unit {
+    font-size: 10px;
+  }
+  #current-city {
+    color: red;
+  }
+  
