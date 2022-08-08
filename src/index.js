@@ -19,11 +19,11 @@ function displayTime(date) {
       min = `0${min}`;
     }
     return `${hour}:${min} ${day}`;
-  }
-  let h2 = document.querySelector("h2");
+    }
+let h2 = document.querySelector("h2");
   let currentDate = new Date();
   h2.innerHTML = displayTime(currentDate);
-  
+
   function showTemperature(response) {
     document.querySelector("#current-temperature").innerHTML = Math.round(
       response.data.main.temp
@@ -48,7 +48,7 @@ function displayTime(date) {
     let city = document.querySelector("#enter-city").value;
     search(city);
   }
-  let submitInput = document.querySelector(".city-input-form");
+  let submitInput = document.querySelector("#city-input-form");
   submitInput.addEventListener("submit", searchCity);
   
   function convertToF(event) {

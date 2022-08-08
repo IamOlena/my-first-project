@@ -17,68 +17,44 @@
 
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6">
-              <header>
-                <form class="city-input-form">
-                  <input
-                    type="text"
-                    placeholder="Enter a city"
-                    id="enter-city"
-                  />
-                  <br />
-                  <input type="submit" value="Search" class="search" />
-                </form>
-                <button id="current-city">Current</button>
-                <h1 id="city">
-                 
-                </h1>
-                <h2>
-                  
-                </h2>
-              </header>
-              <span id="description"></span>
-              <p>
-                
-                <span id="current-temperature"></span>
-                <span id="celsius-unit">°C </span>|
-                <span id="fahrenheit-unit">°F </span>
-                <p class="weather-description">
-                  Humidity: <span id="humidity"></span>%
-                  <br>
-                  Wind: <span id="wind"></span> km/h
-                </p>
-              </p>
-              
-             </div>
-            <div class="col-2">
-              <ul class="Weekday">
-                <li>Tue</li>
-                <li>Wen</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-                <li>Sun</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <ul class="Dayweather">
-                <li>🌤 20°/25°</li>
-                <li>🌤 20°/25°</li>
-                <li>🌤 20°/25°</li>
-                <li>🌤 20°/25°</li>
-                <li>🌤 20°/25°</li>
-                <li>🌤 20°/25°</li>
-              </ul>
-            </div>
-          </div>
+      <div class="weather-app">
+     <div class="weather-app-box">
+      <form id="city-input-form" class="form-control-lg mb-2 mt-1">
+        <input
+          type="text"
+          placeholder="Enter a city"
+          id="enter-city"
+        />
+        <input type="submit" value="Search" class="search" />
+        <button id="current-city">🏚</button>
+      </form>
+            <div class="row">
+       <div class="col-8">
+        <h1 id="city">
+        </h1>
+        <h2></h2>
+        <span id="description"></span>
+        <div class="weather-description">
+         Humidity: 
+         <span id="humidity"></span>%
+         <br>
+         Wind: <span id="wind"></span> km/h
         </div>
-      </div>
-      <a href="https://github.com/IamOlena/my-first-project">Open-source code</a>
+       </div> 
+       <div class="col-4" id="temperature">
+        <span id="current-temperature"></span>
+        <span id="celsius-unit">°C </span>
+        <span id="fahrenheit-unit">| °F </span>
+       </div>
+      </div> 
+     </div>
+    
+    <div class="git-link mt-0">
+    <a href="https://github.com/IamOlena/my-first-project">Open-source code</a>
       <span>by Olena Turchynska</span>
+    </div>  
     </div>
+  </div>
     <script src="src/index.js"></script>
   </body>
 </html>

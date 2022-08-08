@@ -1,15 +1,46 @@
-li {
-    list-style-type: none;
-    margin-left: 0;
+  
+  button {
+    border-radius: 2px;
+    border-color: rgb(118, 118, 118);
+    border-width: 1px;
+    padding: 1.7px 10px;
   }
+
+h2 {
+font-size: 20px;
+}
+  .git-link {
+    max-width: 500px;
+    margin: 30px auto;
+    font-size: 15px;
+  }
+  .weather-app {
+    max-width: 530px;
+    margin: 30px auto;
+  }
+.weather-app-box {
+ padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+
+}
+#current-temperature {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
   #celsius-unit,
   #fahrenheit-unit {
-    font-size: 10px;
+    font-size: 16px;
+    position: relative;
+    bottom:22px;
   }
-  #fahrenheit-unit {
-    font-size: 10px;
-  }
-  #current-city {
-    color: red;
-  }
+  #city-input-form {
+    margin: 0 auto;
+    padding: 1px;
   
+  }
+  #enter-city {
+    width: 350px;
+  }
