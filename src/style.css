@@ -10,7 +10,6 @@ h2 {
 font-size: 20px;
 }
   .git-link {
-    max-width: 500px;
     margin: 30px auto;
     font-size: 15px;
   }
@@ -42,5 +41,16 @@ font-size: 20px;
   
   }
   #enter-city {
-    width: 350px;
+    width: 70%;
   }
+
+  #icon {
+    position: relative;
+    left: -20px;
+    top: -15px;
+  }
+  span#description:first-letter {
+text-transform: capitalize;
+  }
+  
+  
