@@ -1,26 +1,39 @@
   
+  
   button {
     border-radius: 2px;
-    border-color: rgb(118, 118, 118);
+    border-color: rgb(81, 122, 152);
     border-width: 1px;
     padding: 1.7px 10px;
+    background-color: whitesmoke;
   }
 
 h2 {
 font-size: 20px;
 }
-  .git-link {
+.search {
+background-color: whitesmoke;
+border-radius: 2px;
+    border-color: rgb(81, 122, 152);
+    border-width: 1px;
+    padding: 1.7px 10px;
+    color:rgb(4, 4, 121) ;
+
+  }
+.git-link {
     margin: 30px auto;
     font-size: 15px;
   }
   .weather-app {
     max-width: 530px;
     margin: 30px auto;
+    color: rgb(4, 4, 121);
   }
 .weather-app-box {
  padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+background-color: #e6f6fa;
 
 }
 #current-temperature {
@@ -29,8 +42,8 @@ font-size: 20px;
 }
 
 
-  #celsius-unit,
-  #fahrenheit-unit {
+#celsius-unit,
+#fahrenheit-unit {
     font-size: 16px;
     position: relative;
     bottom:22px;
@@ -41,16 +54,24 @@ font-size: 20px;
   
   }
   #enter-city {
-    width: 70%;
-  }
+    width: 68%;
+    border-radius: 2px;
+    border-color: rgb(81, 122, 152);
+    border-width: 1px;
+    padding: 1.7px 10px;
+      }
 
+  ::placeholder {
+    color: rgb(149, 179, 200);
+  }
   #icon {
     position: relative;
-    left: -20px;
-    top: -15px;
+    left: -10px;
+    top: -10px;
   }
-  span#description:first-letter {
-text-transform: capitalize;
+  
+  #description::first-letter {
+    text-transform: uppercase;
   }
   
   
