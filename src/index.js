@@ -24,6 +24,31 @@ let h2 = document.querySelector("h2");
   let currentDate = new Date();
   h2.innerHTML = displayTime(currentDate);
 
+  function displayForecast(){
+    let forecastElement = document.querySelector(".forecast");
+    let days = ["Sun","Mon","Tue","Wen","Thu"];
+     
+    let forecastHTML = `<div class = "row">`;
+    days.forEach(function (day) {
+     forecastHTML= forecastHTML + `
+        <div class="col-2">
+        <div class="forecast-day">${day}</div>
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="50">
+      <div class="forecast-temperatures">
+<span class="forecast-temp-max">25°</span>
+<span class="forecast-temp-min">17°</span>
+      </div>
+    </div>
+     `;
+    });
+
+    forecastHTML= forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+
+  }
+  
+  
+  
   function showTemperature(response) {
     celsiusTemp = response.data.main.temp;
     document.querySelector("#current-temperature").innerHTML = Math.round(
@@ -92,4 +117,5 @@ let h2 = document.querySelector("h2");
   let celsiusTemp = null;
 
   search("Stockholm");
+  displayForecast();
   

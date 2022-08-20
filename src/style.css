@@ -4,16 +4,16 @@
     border-radius: 2px;
     border-color: rgb(81, 122, 152);
     border-width: 1px;
-    padding: 1.7px 10px;
+    padding: 2.3px 10px;
     background-color: whitesmoke;
   }
 
 h2 {
-font-size: 20px;
+  font-size: 20px;
 }
 .search {
-background-color: whitesmoke;
-border-radius: 2px;
+  background-color: whitesmoke;
+  border-radius: 2px;
     border-color: rgb(81, 122, 152);
     border-width: 1px;
     padding: 1.7px 10px;
@@ -21,10 +21,9 @@ border-radius: 2px;
 
   }
 .git-link {
-    margin: 30px auto;
     font-size: 15px;
   }
-  .weather-app {
+.weather-app {
     max-width: 530px;
     margin: 30px auto;
     color: rgb(4, 4, 121);
@@ -70,8 +69,14 @@ background-color: #e6f6fa;
     top: -10px;
   }
   
-  #description::first-letter {
+#description::first-letter {
     text-transform: uppercase;
   }
-  
-  
+ #current-city {
+  font-size: 19px;
+  color:rgb(4, 4, 121) ;
+ } 
+  .forecast{
+   margin-top: 10px;
+  text-align: center;
+  }
