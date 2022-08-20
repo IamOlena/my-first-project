@@ -104,24 +104,7 @@ function formatDay(timestamp){
   let submitInput = document.querySelector("#city-input-form");
   submitInput.addEventListener("submit", searchCity);
   
-  function convertToFahrenheit(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#current-temperature");
-    let tempFahrenheit = Math.round((celsiusTemp * 9) / 5 + 32);
-    temperatureElement.innerHTML = tempFahrenheit;
-  }
-
-  function displayCelsiusTemp (event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#current-temperature");
-    temperatureElement.innerHTML = Math.round(celsiusTemp);
-  }
-
-  let fahrenheitElement = document.querySelector("#fahrenheit-unit");
-  fahrenheitElement.addEventListener("click", convertToFahrenheit);
-  let celsiusElement = document.querySelector("#celsius-unit");
-  celsiusElement.addEventListener("click", displayCelsiusTemp);
-
+  
   function getLocation(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -136,8 +119,6 @@ function formatDay(timestamp){
   let currentButton = document.querySelector("#current-city");
   currentButton.addEventListener("click", getCurrentPosition);
   
-  let celsiusTemp = null;
-
-  search("Stockholm");
+    search("Stockholm");
   
   
