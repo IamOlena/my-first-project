@@ -1,4 +1,6 @@
-  
+  body {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/305/original/pexels-darius-krause-2470655.jpg?1661261374");
+  }
   
   button {
     border-radius: 2px;
@@ -10,6 +12,7 @@
 
 h2 {
   font-size: 20px;
+  
 }
 .search {
   background-color: whitesmoke;
@@ -27,22 +30,24 @@ h2 {
     max-width: 530px;
     margin: 30px auto;
     color: rgb(4, 4, 121);
+    
   }
 .weather-app-box {
  padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-background-color: rgb(227, 234, 249);
+background-color: rgb(227, 234, 249, 0.5);
+
 
 }
 #current-temperature {
   font-size: 50px;
   font-weight: 600;
+  margin-left: 18px;
 }
 
 
-#celsius-unit,
-#fahrenheit-unit {
+#celsius-unit {
     font-size: 16px;
     position: relative;
     bottom:22px;
@@ -69,8 +74,12 @@ background-color: rgb(227, 234, 249);
     top: -10px;
   }
   
-#description::first-letter {
-    text-transform: uppercase;
+  #description::first-letter {
+    text-transform: uppercase;    
+  }
+
+  #description {
+    margin-bottom: 5px;
   }
  #current-city {
   font-size: 19px;
@@ -79,4 +88,7 @@ background-color: rgb(227, 234, 249);
   .forecast{
    margin-top: 10px;
   text-align: center;
+  }
+  .forecast-temp-min {
+    opacity: 0.7;
   }
