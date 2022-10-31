@@ -1,5 +1,6 @@
   body {
-    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/305/original/pexels-darius-krause-2470655.jpg?1661261374");
+    background-image: url("pexels-eberhard-grossgasteiger-844297.jpg");
+    background: opacity 0.5;
   }
   
   button {
